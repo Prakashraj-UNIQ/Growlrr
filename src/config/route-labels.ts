@@ -1,0 +1,15 @@
+export const ROUTE_LABELS: Record<string, string> = {
+  "about-us": "About Us",
+  "contact-us": "Contact Us",
+  recipes: "Recipes",
+  values: "Our Values",
+  blogs: "Blog",
+  shop: "Shop",
+  cart: "Cart",
+  "privacy-policy": "Privacy Policy",
+  terms: "Terms & Conditions",
+  products: "Products",
+  categories: "Categories",
+  orders: "Orders",
+  users: "Users",
+};
