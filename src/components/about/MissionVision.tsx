@@ -3,7 +3,7 @@ import { Sparkles, Target } from "lucide-react";
 
 export default function MissionVisionCenter() {
   return (
-    <section className="relative flex items-center justify-center min-h-[80vh] overflow-hidden">
+    <section className="relative flex items-center justify-center min-h-[90vh] overflow-hidden">
       {/* Background image */}
       <Image
         src="/images/MVBg.webp"
@@ -17,7 +17,7 @@ export default function MissionVisionCenter() {
       {/* <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]" /> */}
 
       {/* Center content */}
-      <div className="relative z-10 text-center px-6 py-10 max-w-2xl">
+      <div className="relative z-10 text-center px-6 py-10  max-w-2xl">
         <div className="flex flex-col gap-8">
           {/* Mission */}
           <div>

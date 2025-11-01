@@ -71,14 +71,14 @@ export default function GrowlrrProducts() {
       <div className="mx-auto max-w-7xl px-1.5 sm:px-5">
         {/* Header */}
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div>
-            <h2 className="flex items-center text-3xl font-black tracking-tight text-brandBlue dark:text-white mb-2"><PawPrint className="text-amber-800 w-8 h-8 mr-2" /> Growlrr Bistro</h2>
+          <div className="text-center">
+            <h2 className="flex items-center justify-center sm:justify-start text-3xl font-black tracking-tight text-brandBlue dark:text-white mb-2"><PawPrint className="text-amber-800 w-8 h-8 mr-2" /> Growlrr Bistro</h2>
             <p className="text-sm text-zinc-900 dark:text-zinc-300">
               Rotation-based, human-grade pouches. Vet-guided. AAFCO/FEDIAF aligned.
             </p>
           </div>
           {/* Filters + Cart open */}
-          <div className="flex flex-wrap items-center gap-2">
+          <div className="flex justify-center items-center gap-2">
             <div className="rounded-full border border-zinc-300 p-1 dark:border-zinc-700 bg-white dark:bg-zinc-900">
               {(["All", "Cat", "Dog"] as const).map((s) => {
                 const active = s === species;

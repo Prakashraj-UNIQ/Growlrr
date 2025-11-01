@@ -4,7 +4,7 @@ import { PawPrint } from "lucide-react";
 const HeroSection = () => {
   // bg-[#f0f0f0]
   return (
-    <div className="relative py-8 sm:py-0 sm:h-138 bg-brandAccent">
+    <div className="relative  pt-18 sm:pt-0 sm:h-138 bg-brandAccent">
 
         {/* Left side */}
         <div className="absolute animate-ping left-70 bottom-10 "> 
@@ -67,7 +67,7 @@ const HeroSection = () => {
           alt="Growlrr nutrition food for pets"
           width={800}
           height={500}
-          className="sm:h-135 sm:w-185 sm:translate-y-2.5"
+          className="sm:h-135 sm:w-185  sm:translate-y-2.5"
           priority
         />
       </div>
