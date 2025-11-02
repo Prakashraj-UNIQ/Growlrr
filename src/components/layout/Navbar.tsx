@@ -65,18 +65,18 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-  if (open) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "";
-  }
-}, [open]);
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [open]);
 
   // Helpers for showing sections based on mode
   const showFull = mode === "full";
   const showCompact = mode === "compact";
   const hiddenClass =
-  open || mode !== "hidden" ? "translate-y-0" : "-translate-y-full";
+    open || mode !== "hidden" ? "translate-y-0" : "-translate-y-full";
 
   return (
     <>
@@ -204,9 +204,8 @@ export default function Navbar() {
                   return (
                     <li key={l.href}>
                       <Link
-                        className={`hover:text-brandOrange transition ${
-                          isActive ? "text-brandBlue font-bold" : "text-gray-600"
-                        }`}
+                        className={`hover:text-brandOrange transition ${isActive ? "text-brandBlue font-bold" : "text-gray-600"
+                          }`}
                         href={l.href}
                       >
                         {l.label}
@@ -278,9 +277,8 @@ export default function Navbar() {
                   return (
                     <li key={l.href}>
                       <Link
-                        className={`hover:text-brandOrange transition ${
-                          isActive ? "text-brandBlue font-bold" : "text-gray-600"
-                        }`}
+                        className={`hover:text-brandOrange transition ${isActive ? "text-brandBlue font-bold" : "text-gray-600"
+                          }`}
                         href={l.href}
                       >
                         {l.label}
@@ -301,9 +299,11 @@ export default function Navbar() {
       {/* border-b border-gray-200 */}
       <div
         id="mobile-nav-panel"
-        className={`md:hidden fixed left-0 right-0 top-16 z-40 bg-white  overflow-hidden transition-[max-height] duration-300 ease-in-out ${
-          open ? "h-screen" : "max-h-0"
-        }`}
+        style={{
+          top: open ? (showFull ? "130px" : "60px") : "0",
+        }}
+        className={`md:hidden fixed left-0 right-0 z-40 bg-white overflow-hidden transition-[max-height] duration-300 ease-in-out ${open ? "h-screen" : "max-h-0"
+          }`}
       >
         <div className="px-4 py-3 space-y-3">
           {/* Links */}
@@ -315,9 +315,8 @@ export default function Navbar() {
                   <li key={l.href}>
                     <Link
                       onClick={() => setOpen(false)}
-                      className={`block rounded-lg px-3 py-2 hover:text-brandOrange transition ${
-                        isActive ? "text-brandBlue font-bold" : "text-gray-600"
-                      }`}
+                      className={`block rounded-lg px-3 py-2 hover:text-brandOrange transition ${isActive ? "text-brandBlue font-bold" : "text-gray-600"
+                        }`}
                       href={l.href}
                     >
                       {l.label}
