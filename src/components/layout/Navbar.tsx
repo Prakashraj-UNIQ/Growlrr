@@ -64,10 +64,19 @@ export default function Navbar() {
     return () => mql.removeEventListener("change", handler);
   }, []);
 
+  useEffect(() => {
+  if (open) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
+}, [open]);
+
   // Helpers for showing sections based on mode
   const showFull = mode === "full";
   const showCompact = mode === "compact";
-  const hiddenClass = mode === "hidden" ? "-translate-y-full" : "translate-y-0";
+  const hiddenClass =
+  open || mode !== "hidden" ? "translate-y-0" : "-translate-y-full";
 
   return (
     <>
@@ -343,3 +352,5 @@ export default function Navbar() {
     </>
   );
 }
+
+

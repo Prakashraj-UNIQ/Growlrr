@@ -17,7 +17,7 @@ const ProductCombo = () => {
         </div>
 
         {/* Text Section */}
-        <div className="w-full sm:w-1/2 flex flex-col justify-center items-start p-6 sm:p-10 lg:p-14 text-center sm:text-left order-2 sm:order-none">
+        <div className="w-full sm:w-1/2 flex flex-col justify-center items-start p-4 sm:p-10 lg:p-14  sm:text-left order-2 sm:order-none">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl text-amber-900 font-bold mb-4">
             Dog Core 7-Day Rotation Combo
           </h1>
@@ -25,7 +25,7 @@ const ProductCombo = () => {
             Slow-simmered in natural broth for balanced, single-protein
             nutrition. Designed by nutritionists, loved by pets.
           </p>
-          <button className="border px-8 py-2 rounded-full hover:bg-brandOrange hover:text-white transition font-semibold self-start sm:self-start">
+          <button className="border px-8 py-2 rounded-full bg-brandOrange text-white lg:bg-transparent lg:text-black hover:bg-brandOrange hover:text-white transition font-semibold self-start sm:self-start">
             Buy Now
           </button>
         </div>
@@ -34,7 +34,7 @@ const ProductCombo = () => {
       {/* --- Cat Combo --- */}
       <div className="flex flex-col sm:flex-row-reverse items-center bg-amber-50 rounded-2xl overflow-hidden shadow-sm m-4 sm:m-8 lg:m-25">
         {/* Image Section (on top in mobile) */}
-        <div className="w-full sm:w-1/2 bg-[#e7e5e3] flex justify-center items-center p-6 order-1 sm:order-none">
+        <div className="w-full sm:w-1/2 bg-[#e7e5e3] flex justify-center items-center p-4 order-1 sm:order-none">
           <Image
             alt="Growlrr Cat diet plan combo"
             src="/images/Products/Product2.jpg"
@@ -45,7 +45,7 @@ const ProductCombo = () => {
         </div>
 
         {/* Text Section */}
-        <div className="w-full sm:w-1/2 flex flex-col justify-center items-start p-6 sm:p-10 lg:p-14 text-center sm:text-left order-2 sm:order-none">
+        <div className="w-full sm:w-1/2 flex flex-col justify-center items-start p-6 sm:p-10 lg:p-14 sm:text-left order-2 sm:order-none">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl text-amber-900 font-bold mb-4">
             Cat Core 7-Day Rotation Combo
           </h1>
@@ -53,7 +53,7 @@ const ProductCombo = () => {
             Crafted with slow-simmered natural broth, focused single-protein
             recipes designed by experts and adored by cats.
           </p>
-          <button className="border px-8 py-2 rounded-full hover:bg-brandOrange hover:text-white transition font-semibold self-start sm:self-start">
+          <button className="border px-8 py-2 bg-brandOrange text-white lg:bg-transparent lg:text-black rounded-full hover:bg-brandOrange hover:text-white transition font-semibold self-start sm:self-start">
             Buy Now
           </button>
         </div>

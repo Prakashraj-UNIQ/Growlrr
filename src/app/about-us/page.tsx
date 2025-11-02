@@ -1,6 +1,6 @@
 // app/components/AboutSection.tsx
 "use client";
-import Rough from "@/components/ui/Rough";
+
 import Banner from "@/components/ui/Banner";
 import CoreValue from "@/components/about/CoreValue";
 import GrowlrrHistory from "@/components/about/GrowlrrHistory";

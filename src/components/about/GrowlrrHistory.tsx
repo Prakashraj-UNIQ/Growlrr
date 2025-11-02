@@ -3,11 +3,11 @@ import TimelineItem from "../ui/TimelineItem";
 export default function GrowlrrHistory() {
     return (
         <section className="bg-white dark:bg-gray-800 transition-colors duration-500">
-            <div className="w-full mx-auto px-4 sm:px-12 lg:px-25 flex flex-col items-center justify-center py-24 lg:py-12 relative p-8">
+            <div className="w-full mx-auto px-2 sm:px-12 lg:px-25 flex flex-col items-center justify-center sm:py-24 lg:py-12 relative p-8">
                 <div className="prose  text-gray-800 prose-sm prose-headings:font-normal prose-headings:text-xl mx-auto">
                     <div className="text-center">
                         <h1 className="text-3xl font-bold dark:text-white">
-                            <span className="text-brandOrange">Grow</span><span className="text-brandBlue">lrr</span> — Brief History
+                            <span className="text-brandOrange">Grow</span><span className="text-brandBlue">lrr</span> Brief History
                         </h1>
                         <p className="text-balance text-gray-600 dark:text-gray-300 mt-2">
                             From lab bench to bowl — the journey to science-driven, rotation-based nutrition.

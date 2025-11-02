@@ -65,7 +65,7 @@ export default function ValuesShowcase() {
       <div
         ref={scrollRef}
         className={classNames(
-          "mt-5 flex sm:gap-20 overflow-x-auto pb-2",
+          "mt-5 flex mx-18 sm:mx-0 sm:gap-20 overflow-x-auto pb-2",
           "snap-x snap-mandatory [-ms-overflow-style:none] [scrollbar-width:none]",
           "[&::-webkit-scrollbar]:hidden"
         )}
@@ -109,7 +109,7 @@ export default function ValuesShowcase() {
             key={i}
             className={classNames(
               "mx-1 h-2 w-2 rounded-full transition-all duration-300",
-              i === activeIndex ? "bg-amber-800 w-4" : "bg-amber-50"
+              i === activeIndex ? "bg-brandOrange w-4" : "bg-amber-50"
             )}
           ></span>
         ))}

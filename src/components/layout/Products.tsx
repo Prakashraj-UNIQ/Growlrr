@@ -73,7 +73,7 @@ export default function GrowlrrProducts() {
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div className="text-center">
             <h2 className="flex items-center justify-center sm:justify-start text-3xl font-black tracking-tight text-brandBlue dark:text-white mb-2"><PawPrint className="text-amber-800 w-8 h-8 mr-2" /> Growlrr Bistro</h2>
-            <p className="text-sm text-zinc-900 dark:text-zinc-300">
+            <p className="text-base text-zinc-900 dark:text-zinc-300">
               Rotation-based, human-grade pouches. Vet-guided. AAFCO/FEDIAF aligned.
             </p>
           </div>

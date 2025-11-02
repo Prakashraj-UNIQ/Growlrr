@@ -8,6 +8,14 @@ const quickLinks = [
   { to: "#products", label: "Values" },
   { to: "/contact-us", label: "Contact Us" },
 ];
+const policyLinks = [
+  { to: "#privacy", label: "Privacy Policy" },
+  { to: "#terms", label: "Terms and Conditions" },
+  { to: "#return", label: "Return Policy" },
+  { to: "#support", label: "Support Policy" },
+  { to: "#shipping", label: "Shipping Policy" }
+];
+
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -23,8 +31,7 @@ const Footer = () => {
               <span className="text-2xl font-extrabold tracking-tight text-brandOrange">Growlrr</span>
             </a>
             <p className="text-sm leading-relaxed text-gray-100">
-              Bringing home-cooked warmth to those away from home while empowering homemakers and
-              local talents with real opportunities.
+              Growlrr Foods is a next-generation pet nutrition company built at the intersection of veterinary science, food engineering, and digital technology.
             </p>
           </div>
 
@@ -33,6 +40,21 @@ const Footer = () => {
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-200">Quick Links</h3>
             <ul className="mt-4 space-y-2">
               {quickLinks.map((l) => (
+                <li key={l.to}>
+                  <Link
+                    href={l.to}
+                    className="text-sm text-gray-300 transition hover:text-white"
+                  >
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="block lg:hidden">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-200">Policies & Support</h3>
+            <ul className="mt-4 space-y-2">
+              {policyLinks.map((l) => (
                 <li key={l.to}>
                   <Link
                     href={l.to}
@@ -64,7 +86,7 @@ const Footer = () => {
               Get updates about new home chefs and local services.
             </p>
             <form
-              
+
               className="mt-4 flex w-full items-center gap-2"
             >
               <label htmlFor="footer-email" className="sr-only">
@@ -116,11 +138,28 @@ const Footer = () => {
           <p className="text-xs text-gray-100">
             © {year} <span className="font-semibold text-gray-200">Growlrr</span>. All rights reserved.
           </p>
-          <div className="flex items-center gap-4 text-xs">
-            <a href="#privacy" className="text-gray-100 hover:text-white">Privacy Policy</a>
-            <span className="h-3 w-px bg-gray-300" />
-            <a href="#terms" className="text-gray-100 hover:text-white">Terms</a>
-            <span className="h-3 w-px bg-gray-300" />
+          
+          <div className="hidden lg:flex items-center gap-4 text-xs">
+            <div>
+              <a href="#privacy" className="text-gray-100 hover:text-white">Privacy Policy</a>
+              <span className="h-3 w-px bg-gray-300" />
+            </div>
+            <div>
+              <a href="#terms" className="text-gray-100 hover:text-white">Terms and Conditions</a>
+              <span className="h-3 w-px bg-gray-300" />
+            </div>
+            <div>
+              <a href="#terms" className="text-gray-100 hover:text-white">Return Policy</a>
+              <span className="h-3 w-px bg-gray-300" />
+            </div>
+            <div>
+              <a href="#terms" className="text-gray-100 hover:text-white">Support Policy</a>
+              <span className="h-3 w-px bg-gray-300" />
+            </div>
+            <div>
+              <a href="#terms" className="text-gray-100 hover:text-white">Shipping Policy</a>
+              <span className="h-3 w-px bg-gray-300" />
+            </div>
             <a href="#home" className="inline-flex items-center text-gray-100 hover:text-white">
               Back to top
               <svg className="ml-1 h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
