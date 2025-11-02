@@ -198,7 +198,7 @@ export default function Navbar() {
 
             {/* Desktop nav row */}
             <nav className="hidden md:block">
-              <ul className="mx-auto px-4 py-3  sm:px-6 lg:px-25 flex items-center gap-8 py-3 border-t border-gray-200">
+              <ul className="mx-auto px-4 py-3 sm:px-6 lg:px-25 flex items-center gap-8 py-3 border-t border-gray-200">
                 {navbarLinks.map((l) => {
                   const isActive = pathname === l.href;
                   return (
@@ -272,7 +272,7 @@ export default function Navbar() {
 
             {/* Desktop: only nav links row */}
             <nav className="hidden md:block">
-              <ul className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8 flex items-center gap-8 py-2">
+              <ul className=" px-4 py-4 sm:px-6 lg:px-25 flex items-center gap-8 py-2">
                 {navbarLinks.map((l) => {
                   const isActive = pathname === l.href;
                   return (
