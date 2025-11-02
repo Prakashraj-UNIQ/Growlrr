@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Breadcrumbs from "@/components/ui/BreadCrumbs";
+import ScrollToTop from "@/components/layout/ScrollToTop";
 
 
 const lato = Nunito({
@@ -30,6 +31,7 @@ export default function RootLayout({
       >
         <Navbar/>
         <Breadcrumbs/>
+        <ScrollToTop/>
         {children}
         <Footer/>
       </body>
