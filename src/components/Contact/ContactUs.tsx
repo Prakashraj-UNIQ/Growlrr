@@ -4,7 +4,7 @@ import InputWithIcon from "../ui/Input";
 const ContactUs = () => {
   return (
     <div className="sm:px-10 md:px-20 bg-gray-50 ">
-      <div className="mt-8 sm:mt-0">
+      <div className="pt-8 sm:pt-0">
         <form className="flex flex-col gap-5 p-4 sm:p-6 items-center justify-center">
           <div className="text-center">
           <h1 className="text-3xl font-bold text-brandBlue mb-2">Contact Us</h1>

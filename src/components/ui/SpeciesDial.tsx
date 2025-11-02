@@ -95,11 +95,11 @@ export default function WeeklyRotationCircle({
           Pets don’t need every nutrient maxed in one meal. Our system balances across the cycle, aligning to AAFCO / FEDIAF while staying biologically appropriate.
         </p>
 
-        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:space-y-2">
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 space-y-2 space-x-8">
           {days.map((d, i) => (
             <div
               key={d.key}
-              className={`flex sm:flex-col items-center gap-2 border border-gray-300 sm:m-2 rounded-lg p-3 transition ${
+              className={`flex sm:flex-col items-center gap-2 border border-gray-300 sm:m-2 rounded-lg  p-3 transition ${
                 i === idx ? "bg-amber-50" : "hover:bg-amber-50"
               }`}
               onClick={() => setIdx(i)}
@@ -115,7 +115,7 @@ export default function WeeklyRotationCircle({
 
       {/* Right wheel */}
       <div className="relative mx-auto">
-        <svg viewBox={`0 0 ${size} ${size}`} className="h-[300px] w-[300px] sm:w-[550px] sm:h-[550px] lg:w-[650px] lg:h-[650px]"> 
+        <svg viewBox={`0 0 ${size} ${size}`} className="h-[350px] w-[350px] sm:w-[550px] sm:h-[550px] lg:w-[650px] lg:h-[650px]"> 
           <circle
             cx={cx}
             cy={cy}

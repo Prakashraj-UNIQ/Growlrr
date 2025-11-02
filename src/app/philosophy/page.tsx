@@ -16,7 +16,7 @@ export default function PhilosophySection() {
       {/* <Rough/> */}
           <section className="relative  overflow-hidden">
             {/* <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white via-amber-50/30 to-white dark:from-black dark:via-zinc-900 dark:to-black" /> */}
-            <div className=" px-4 sm:px-12 lg:px-25 py-10">
+            <div className=" px-2 sm:px-12 lg:px-25 py-10">
               {/* Header */}
              <WeeklyRotationCircle />
             </div>

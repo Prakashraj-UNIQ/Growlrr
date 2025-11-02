@@ -22,7 +22,7 @@ export default function LoginPage() {
 
   return (
     <div className="relative px-4 sm:px-10 md:px-20 bg-gray-50 ">
-      <div className="mt-8 sm:mt-0 max-w-xl mx-auto py-6">
+      <div className="pt-8 max-w-xl mx-auto py-6">
         <div className="mb-6 text-center">
           <h1 className="text-3xl font-bold text-brandBlue tracking-tight mb-2">
             Welcome back
