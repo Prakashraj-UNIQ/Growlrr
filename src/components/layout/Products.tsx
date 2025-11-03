@@ -182,16 +182,16 @@ export default function GrowlrrProducts() {
         }`}
       >
         <div className="flex items-center justify-between border-b border-zinc-200 p-4 ">
-          <h4 className="text-lg font-semibold">Your Cart</h4>
+          <h4 className="text-lg font-semibold text-black">Your Cart</h4>
           <button
             onClick={() => setOpen(false)}
-            className="rounded-lg border px-2 py-1 text-sm hover:bg-zinc-100  "
+            className="rounded-lg border px-2 py-1 text-sm text-black hover:bg-zinc-100  "
           >
             Close
           </button>
         </div>
 
-        <div className="max-h-[60vh] overflow-y-auto p-4">
+        <div className="max-h-[60vh] overflow-y-auto p-4 text-black">
           {lines.length === 0 ? (
             <p className="text-sm text-zinc-500">No items yet.</p>
           ) : (
@@ -228,14 +228,14 @@ export default function GrowlrrProducts() {
 
         {/* Subscription + totals */}
         <div className="mt-auto border-t border-zinc-200 p-4 text-sm ">
-          <label className="flex items-center gap-2">
+          <label className="flex items-center gap-2 text-black">
             <input type="checkbox" checked={subSave} onChange={(e) => setSubSave(e.target.checked)} />
             <span>
               Subscribe & save <b>10%</b> (monthly)
             </span>
           </label>
 
-          <div className="mt-3 space-y-1">
+          <div className="mt-3 space-y-1 text-black">
             <div className="flex justify-between">
               <span>Subtotal</span>
               <span>₹ {subtotal.toLocaleString("en-IN")}</span>
@@ -252,7 +252,7 @@ export default function GrowlrrProducts() {
             </div>
           </div>
 
-          <div className="mt-4 grid grid-cols-2 gap-2">
+          <div className="mt-4 grid grid-cols-2 gap-2 text-black">
             <button
               onClick={clear}
               className="rounded-xl border px-4 py-2 hover:bg-zinc-100  "
