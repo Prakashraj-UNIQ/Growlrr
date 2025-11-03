@@ -62,11 +62,11 @@ export default function ValuesShowcase() {
   }, []);
 
   return (
-    <section className="mt-12 bg-brandAccent  py-8 sm:px-25 sm:py-10 ">
+    <section className="bg-brandAccent  py-8 sm:px-25 sm:py-10 ">
       <div
         ref={scrollRef}
         className={classNames(
-          "mt-5 flex mx-18 sm:mx-0 sm:gap-20 overflow-x-auto pb-2",
+          "mt-5 flex mx-12 sm:mx-0 sm:gap-20 overflow-x-auto pb-2",
           "snap-x snap-mandatory [-ms-overflow-style:none] [scrollbar-width:none]",
           "[&::-webkit-scrollbar]:hidden"
         )}

@@ -48,7 +48,7 @@ const HeroSection = () => {
           <h3 className="text-3xl md:text-5xl font-bold mb-6 text-gray-800 ">
             Science-Driven Nutrition for Cats & Dogs
           </h3>
-          <h3 className="text-base sm:text-lg tracking-wide">
+          <h3 className="text-base sm:text-lg tracking-wide text-black">
             Wholesome, rotation-based meals designed by vets and crafted with
             human-grade ingredients. Smart nutrition. Real variety. Happier
             pets.

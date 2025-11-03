@@ -6,7 +6,7 @@ import { routes } from "@/config/routes";
 
 export default function CartPage() {
   return (
-    <div className="min-h-[70vh] flex flex-col items-center justify-center px-4 pb-8 text-center">
+    <div className="min-h-[70vh] flex bg-white flex-col items-center justify-center px-4 pb-8 text-center">
       {/* 🛒 Cart Illustration */}
       <div className="relative w-80 h-80 mb-4">
         {/* Replace /images/empty-cart.svg with your image path */}

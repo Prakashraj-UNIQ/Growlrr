@@ -67,7 +67,7 @@ export default function GrowlrrProducts() {
   const total = subtotal - discount;
 
   return (
-    <section className="relative   py-10 sm:bg-brandAccent">
+    <section className="relative py-10 bg-white sm:bg-brandAccent">
       <div className="mx-auto max-w-7xl px-1.5 sm:px-5">
         {/* Header */}
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">

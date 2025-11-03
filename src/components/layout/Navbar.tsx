@@ -86,7 +86,7 @@ export default function Navbar() {
       >
         {/* ===== FULL MODE: brand + desktop search + desktop actions + mobile row ===== */}
         {showFull && (
-          <div className="bg-white  supports-[backdrop-filter]:bg-white border-b border-gray-200">
+          <div className="bg-white supports-[backdrop-filter]:bg-white border-b border-gray-200">
             <div className="mx-auto px-4 sm:px-6 lg:px-25">
               <div className="flex h-16 items-center justify-between gap-4">
                 {/* Brand */}
@@ -113,20 +113,20 @@ export default function Navbar() {
                 {/* Desktop actions */}
                 <div className="hidden md:flex gap-3 items-center">
                   <button
-                    className="cursor-pointer flex gap-2 py-2 px-2 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition"
+                    className="cursor-pointer flex gap-2 py-2 px-2 rounded-full border border-brandBlue text-brandBlue hover:bg-brandBlue/5 transition"
                     aria-label="Call"
                   >
                     <PhoneCall />
                   </button>
                   <button
-                    className="cursor-pointer flex gap-2 py-2 px-2 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition"
+                    className="cursor-pointer flex gap-2 py-2 px-2 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition text-brandBlue "
                     aria-label="Mail"
                   >
                     <Mail />
                   </button>
                   <Link
                     href="/login"
-                    className="cursor-pointer flex gap-2 py-2 px-5 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition"
+                    className="cursor-pointer flex gap-2 py-2 px-5 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition text-brandBlue "
                   >
                     <UserRound />
                     <span className="whitespace-nowrap">Account</span>
@@ -143,35 +143,35 @@ export default function Navbar() {
                 {/* Mobile header: phone, mail, cart, hamburger */}
                 <div className="flex md:hidden items-center gap-2">
                   <button
-                    className="p-2 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition"
+                    className="p-2 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition text-brandBlue "
                     aria-label="Call"
                   >
-                    <PhoneCall className="w-5 h-5" />
+                    <PhoneCall className="w-5 h-5 text-brandBlue" />
                   </button>
                   <button
-                    className="p-2 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition"
+                    className="p-2 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition text-brandBlue "
                     aria-label="Mail"
                   >
-                    <Mail className="w-5 h-5" />
+                    <Mail className="w-5 h-5 text-brandBlue" />
                   </button>
                   <Link
                     href="/cart"
-                    className="p-2 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition"
+                    className="p-2 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition text-brandBlue "
                     aria-label="Cart"
                   >
-                    <ShoppingCart className="w-5 h-5" />
+                    <ShoppingCart className="w-5 h-5 text-brandBlue" />
                   </Link>
                   <button
-                    className="p-2 rounded-full border border-gray-300 hover:bg-gray-50 transition"
+                    className="p-2 rounded-full border border-brandBlue hover:bg-gray-50 transition"
                     aria-label="Open menu"
                     aria-controls="mobile-nav-panel"
                     aria-expanded={open}
                     onClick={() => setOpen((v) => !v)}
                   >
                     {open ? (
-                      <X className="w-6 h-6" />
+                      <X className="w-6 h-6 text-brandBlue" />
                     ) : (
-                      <Menu className="w-6 h-6" />
+                      <Menu className="w-6 h-6 text-brandBlue" />
                     )}
                   </button>
                 </div>
@@ -234,26 +234,26 @@ export default function Navbar() {
                 </Link>
                 <div className="flex md:hidden items-center gap-2">
                   <button
-                    className="p-2 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition"
+                    className="p-2 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition text-brandBlue "
                     aria-label="Call"
                   >
-                    <PhoneCall className="w-5 h-5" />
+                    <PhoneCall className="w-5 h-5 text-brandBlue" />
                   </button>
                   <button
-                    className="p-2 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition"
+                    className="p-2 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition text-brandBlue "
                     aria-label="Mail"
                   >
-                    <Mail className="w-5 h-5" />
+                    <Mail className="w-5 h-5 text-brandBlue" />
                   </button>
                   <Link
                     href="/cart"
-                    className="p-2 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition"
+                    className="p-2 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition text-brandBlue "
                     aria-label="Cart"
                   >
-                    <ShoppingCart className="w-5 h-5" />
+                    <ShoppingCart className="w-5 h-5 text-brandBlue" />
                   </Link>
                   <button
-                    className="p-2 rounded-full border border-gray-300 hover:bg-gray-50 transition"
+                    className="p-2 rounded-full border border-brand hover:bg-gray-50 transition text-brandBlue"
                     aria-label="Open menu"
                     aria-controls="mobile-nav-panel"
                     aria-expanded={open}
@@ -293,7 +293,7 @@ export default function Navbar() {
       </header>
 
       {/* It make white space */}
-      <div className="h-[130px] md:h-[112px]" />
+      <div className="h-[130px] md:h-[112px] bg-white" />
 
       {/* ===== Mobile slide-down panel (available in both modes when hamburger is visible) ===== */}
       {/* border-b border-gray-200 */}
@@ -332,9 +332,9 @@ export default function Navbar() {
             <Link
               href="/login"
               onClick={() => setOpen(false)}
-              className="cursor-pointer inline-flex items-center justify-center gap-2 py-2 px-4 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition"
+              className="cursor-pointer inline-flex items-center justify-center gap-2 py-2 px-4 rounded-full border border-brandBlue hover:bg-brandBlue/5 transition text-brandBlue "
             >
-              <UserRound className="w-5 h-5" />
+              <UserRound className="w-5 h-5 text-brandBlue" />
               <span>Account</span>
             </Link>
             <Link
@@ -342,7 +342,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="cursor-pointer inline-flex items-center justify-center gap-2 py-2 px-4 rounded-full border border-brandBlue bg-brandBlue text-white hover:bg-brandBlue/90 transition"
             >
-              <ShoppingCart className="w-5 h-5" />
+              <ShoppingCart className="w-5 h-5 text-white" />
               <span>Rs. 0.00</span>
             </Link>
           </div>

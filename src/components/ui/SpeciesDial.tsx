@@ -90,7 +90,7 @@ export default function WeeklyRotationCircle({
           })}
         </div>
 
-        <h2 className="text-3xl font-bold mb-4">Why Rotational Diet?</h2>
+        <h2 className="text-3xl font-bold mb-4 text-black">Why Rotational Diet?</h2>
         <p className="mt-1 text-base text-zinc-600 ">
           Pets don’t need every nutrient maxed in one meal. Our system balances across the cycle, aligning to AAFCO / FEDIAF while staying biologically appropriate.
         </p>

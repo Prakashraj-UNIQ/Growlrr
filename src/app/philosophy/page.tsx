@@ -14,7 +14,7 @@ export default function PhilosophySection() {
               complete the picture — balanced over time, not forced into one static recipe."
       />
       {/* <Rough/> */}
-          <section className="relative  overflow-hidden">
+          <section className="relative bg-white  overflow-hidden">
             {/* <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white via-amber-50/30 to-white " /> */}
             <div className=" px-2 sm:px-12 lg:px-25 py-10">
               {/* Header */}

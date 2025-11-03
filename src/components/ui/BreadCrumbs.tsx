@@ -40,7 +40,7 @@ export default function Breadcrumbs({
           </Link>
         </li>
         {items.map((it, i) => (
-          <li key={it.href} className="flex items-center gap-2">
+          <li key={it.href} className="flex items-center gap-2 text-black">
             <span>/</span>
             {i === items.length - 1 ? (
               <span aria-current="page" className="font-medium">

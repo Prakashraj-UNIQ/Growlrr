@@ -61,11 +61,11 @@ export default function ValuesShowcase() {
   }, []);
 
   return (
-    <section className="mt-12 bg-brandAccent px-4 py-8 sm:px-25 sm:py-10 ">
+    <section className=" bg-brandAccent px-4 py-8 sm:px-25 sm:py-10 ">
       <div
         ref={scrollRef}
         className={classNames(
-          "mt-5 flex mx-18 sm:mx-0 sm:gap-20 overflow-x-auto pb-2",
+          "mt-5 flex mx-12 sm:mx-0 sm:gap-20 overflow-x-auto pb-2",
           "snap-x snap-mandatory [-ms-overflow-style:none] [scrollbar-width:none]",
           "[&::-webkit-scrollbar]:hidden"
         )}
@@ -83,7 +83,7 @@ export default function ValuesShowcase() {
               role="group"
               aria-labelledby={`value-title-${i}`}
             >
-              <div className="grid h-38 w-38 place-items-center rounded-full  bg-amber-50">
+              <div className="grid h-38 w-38 place-items-center rounded-full bg-amber-50">
                 <Icon strokeWidth={1} className="h-18 w-18 text-amber-700" />
               </div>
 
