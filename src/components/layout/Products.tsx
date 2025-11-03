@@ -161,7 +161,7 @@ export default function GrowlrrProducts() {
                 </button>
                 <button
                   onClick={() => add(p.id)}
-                  className="rounded-full border border-zinc-300 px-4 py-2 text-sm hover:bg-zinc-100 "
+                  className="rounded-full border border-zinc-300 px-4 py-2 text-black text-sm hover:bg-zinc-100 "
                 >
                   + Quick Add
                 </button>
