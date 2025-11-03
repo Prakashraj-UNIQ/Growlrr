@@ -21,11 +21,11 @@ export default function MissionVisionCenter() {
         <div className="flex flex-col gap-8">
           {/* Mission */}
           <div>
-            <Target  strokeWidth={1} className="mx-auto h-12 w-12 text-amber-600 dark:text-amber-400" />
-            <h2 className="mt-3 text-2xl font-bold text-zinc-900 dark:text-white">
+            <Target  strokeWidth={1} className="mx-auto h-12 w-12 text-amber-600 " />
+            <h2 className="mt-3 text-2xl font-bold text-zinc-900">
               Our Mission
             </h2>
-            <p className="mt-2 sm:text-lg text-zinc-700 dark:text-zinc-300">
+            <p className="mt-2 sm:text-lg text-zinc-700 ">
               To make scientifically precise, biologically appropriate food
               accessible to every pet parent turning feeding into a confident,
               data-guided act of care.
@@ -34,11 +34,11 @@ export default function MissionVisionCenter() {
 
           {/* Vision */}
           <div>
-            <Sparkles  strokeWidth={1} className="mx-auto h-12 w-12 text-amber-600 dark:text-amber-400" />
-            <h2 className="mt-3 text-2xl font-bold text-zinc-900 dark:text-white">
+            <Sparkles  strokeWidth={1} className="mx-auto h-12 w-12 text-amber-600 " />
+            <h2 className="mt-3 text-2xl font-bold text-zinc-900">
               Our Vision
             </h2>
-            <p className="mt-2 sm:text-lg text-zinc-700 dark:text-zinc-300">
+            <p className="mt-2 sm:text-lg text-zinc-700 ">
               To redefine pet wellness through science, empathy, and technology
               — creating a world where every meal sustains both joy and
               longevity.

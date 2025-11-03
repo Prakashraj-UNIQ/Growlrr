@@ -146,7 +146,7 @@ const PATRON_TIERS: Tier[] = [
 
 function Badge({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-amber-300 bg-amber-50 px-2.5 py-0.5 text-sm font-medium text-amber-700 dark:border-amber-800 dark:bg-amber-900/30 dark:text-amber-300">
+    <span className="inline-flex items-center rounded-full border border-amber-300 bg-amber-50 px-2.5 py-0.5 text-sm font-medium text-amber-700  ">
       {children}
     </span>
   );
@@ -189,7 +189,7 @@ export default function CrowdFundPage() {
     );
 
   return (
-    <main className="min-h-dvh bg-white text-zinc-900 dark:bg-black dark:text-zinc-100">
+    <main className="min-h-dvh bg-white text-zinc-900  ">
 
 
       {/* Tier Grid */}
@@ -202,9 +202,9 @@ export default function CrowdFundPage() {
                 key={tier.id}
                 className={[
                   "group relative flex flex-col rounded-2xl border bg-white/90 p-6 shadow-sm ring-1 ring-black/5 transition hover:shadow-lg",
-                  "dark:border-zinc-800 dark:bg-zinc-900/80",
+                  " ",
                   isSelected
-                    ? "border-amber-500 ring-2 ring-amber-300 dark:ring-amber-700/60"
+                    ? "border-amber-500 ring-2 ring-amber-300 "
                     : "border-zinc-200",
                 ].join(" ")}
               >
@@ -219,15 +219,15 @@ export default function CrowdFundPage() {
 
                 {/* header */}
                 <div className="mt-2 flex items-center gap-2">
-                  <ShieldCheck className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+                  <ShieldCheck className="h-5 w-5 text-emerald-600 " />
                   <h3 className="text-lg font-semibold">{tier.label}</h3>
                 </div>
                 <p className="mt-1 sm:text-base text-sm text-zinc-500">{tier.priceLabel}</p>
 
                 {/* Rewards */}
                 <div className="mt-4 space-y-2 sm:text-base text-sm">
-                  <p className="font-bold text-zinc-800 dark:text-zinc-200">Rewards</p>
-                  <ul className="space-y-1 text-zinc-700 dark:text-zinc-300">
+                  <p className="font-bold text-zinc-800 ">Rewards</p>
+                  <ul className="space-y-1 text-zinc-700 ">
                     {tier.reward.map((r, i) => (
                       <CheckItem key={i}>{r}</CheckItem>
                     ))}
@@ -236,8 +236,8 @@ export default function CrowdFundPage() {
 
                 {tier.recognition && (
                   <div className="mt-4 space-y-2 sm:text-base text-sm">
-                    <p className="font-bold text-zinc-800 dark:text-zinc-200">Recognition</p>
-                    <ul className="space-y-1 text-zinc-700 dark:text-zinc-300">
+                    <p className="font-bold text-zinc-800 ">Recognition</p>
+                    <ul className="space-y-1 text-zinc-700 ">
                       {tier.recognition.map((r, i) => (
                         <CheckItem key={i}>{r}</CheckItem>
                       ))}
@@ -247,8 +247,8 @@ export default function CrowdFundPage() {
 
                 {tier.merch && (
                   <div className="mt-4 space-y-2 sm:text-base text-sm">
-                    <p className="font-bold text-zinc-800 dark:text-zinc-200">Merch</p>
-                    <ul className="space-y-1 text-zinc-700 dark:text-zinc-300">
+                    <p className="font-bold text-zinc-800 ">Merch</p>
+                    <ul className="space-y-1 text-zinc-700 ">
                       {tier.merch.map((m, i) => (
                         <CheckItem key={i}>{m}</CheckItem>
                       ))}
@@ -258,8 +258,8 @@ export default function CrowdFundPage() {
 
                 {tier.logistics && (
                   <div className="mt-4 space-y-2 sm:text-base text-sm">
-                    <p className="font-bold text-zinc-800 dark:text-zinc-200">Logistics</p>
-                    <ul className="space-y-1 text-zinc-700 dark:text-zinc-300">
+                    <p className="font-bold text-zinc-800 ">Logistics</p>
+                    <ul className="space-y-1 text-zinc-700 ">
                       {tier.logistics.map((l, i) => (
                         <CheckItem key={i}>{l}</CheckItem>
                       ))}
@@ -268,10 +268,10 @@ export default function CrowdFundPage() {
                 )}
 
                 {/* trust band */}
-                <div className="mt-5 grid grid-cols-3 gap-2 rounded-xl border border-zinc-200 p-3 text-xs text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">
-                  <div className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-emerald-600 dark:text-emerald-400" /> Verified perks</div>
-                  <div className="flex items-center gap-1.5"><Lock className="h-4 w-4 text-amber-600 dark:text-amber-400" /> Secure</div>
-                  <div className="flex items-center gap-1.5"><Award className="h-4 w-4 text-sky-600 dark:text-sky-400" /> AAFCO/FEDIAF</div>
+                <div className="mt-5 grid grid-cols-3 gap-2 rounded-xl border border-zinc-200 p-3 text-xs text-zinc-600  ">
+                  <div className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4 text-emerald-600 " /> Verified perks</div>
+                  <div className="flex items-center gap-1.5"><Lock className="h-4 w-4 text-amber-600 " /> Secure</div>
+                  <div className="flex items-center gap-1.5"><Award className="h-4 w-4 text-sky-600 " /> AAFCO/FEDIAF</div>
                 </div>
 
                 {/* footnotes */}
@@ -287,7 +287,7 @@ export default function CrowdFundPage() {
                     className={[
                       "flex-1 rounded-xl px-4 py-2 sm:text-base text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-amber-500",
                       isSelected
-                        ? "bg-zinc-200 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-100"
+                        ? "bg-zinc-200 text-zinc-900 "
                         : "bg-brandOrange text-white hover:bg-amber-700",
                     ].join(" ")}
                   >
@@ -298,7 +298,7 @@ export default function CrowdFundPage() {
 
                 {/* micro-credibility */}
                 <p className="mt-3 text-sm text-zinc-500">
-                  Trusted by <span className="font-medium text-zinc-700 dark:text-zinc-300">500+ pet parents</span>
+                  Trusted by <span className="font-medium text-zinc-700 ">500+ pet parents</span>
                 </p>
               </article>
 
@@ -309,7 +309,7 @@ export default function CrowdFundPage() {
         {/* FAQ */}
         <div className="mt-16">
           <h2 className="text-xl font-semibold text-center">FAQ</h2>
-          <div className="mt-4 divide-y divide-zinc-200 rounded-2xl border border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800">
+          <div className="mt-4 divide-y divide-zinc-200 rounded-2xl border border-zinc-200 ">
             <Faq q="How do I receive my perks?" a="We’ll email your confirmation and ship merch in batches. Digital recognition and app access are granted as soon as they’re live." />
             <Faq q="Can I dedicate my support to a shelter?" a="Yes — select a Shelter tier or mention the shelter name in checkout notes. We’ll coordinate delivery and share proof of donation." />
             <Faq q="Are contributions refundable?" a="Crowdfunding contributions are typically non-refundable. If there’s a fulfillment issue, contact info@growlrr.com for help." />
@@ -319,11 +319,11 @@ export default function CrowdFundPage() {
       </section>
 
       {/* Sticky Drawer (Selected Summary) */}
-      <div className="fixed inset-x-0 bottom-0 z-20 border-t border-zinc-200 bg-white/90 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/90">
+      <div className="fixed inset-x-0 bottom-0 z-20 border-t border-zinc-200 bg-white/90 backdrop-blur ">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="min-h-[28px]">
             {selectedTiers.length === 0 ? (
-              <p className="sm:text-base text-sm text-zinc-600 dark:text-zinc-300">
+              <p className="sm:text-base text-sm text-zinc-600 ">
                 No tier selected yet. Pick one or more to proceed.
               </p>
             ) : (
@@ -339,7 +339,7 @@ export default function CrowdFundPage() {
           <div className="flex gap-2">
             <button
               onClick={() => setSelected([])}
-              className="rounded-xl border border-zinc-300 px-4 py-2 sm:text-base text-sm transition hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800"
+              className="rounded-xl border border-zinc-300 px-4 py-2 sm:text-base text-sm transition hover:bg-zinc-100 "
               disabled={selected.length === 0}
             >
               Clear

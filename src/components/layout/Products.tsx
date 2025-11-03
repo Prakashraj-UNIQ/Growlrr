@@ -67,19 +67,19 @@ export default function GrowlrrProducts() {
   const total = subtotal - discount;
 
   return (
-    <section className="relative dark:from-zinc-950 dark:to-black py-10 sm:bg-brandAccent">
+    <section className="relative   py-10 sm:bg-brandAccent">
       <div className="mx-auto max-w-7xl px-1.5 sm:px-5">
         {/* Header */}
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div className="text-center">
-            <h2 className="flex items-center justify-center sm:justify-start text-3xl font-black tracking-tight text-brandBlue dark:text-white mb-2"><PawPrint className="text-amber-800 w-8 h-8 mr-2" /> Growlrr Bistro</h2>
-            <p className="text-base text-zinc-900 dark:text-zinc-300">
+            <h2 className="flex items-center justify-center sm:justify-start text-3xl font-black tracking-tight text-brandBlue  mb-2"><PawPrint className="text-amber-800 w-8 h-8 mr-2" /> Growlrr Bistro</h2>
+            <p className="text-base text-zinc-900 ">
               Rotation-based, human-grade pouches. Vet-guided. AAFCO/FEDIAF aligned.
             </p>
           </div>
           {/* Filters + Cart open */}
           <div className="flex justify-center items-center gap-2">
-            <div className="rounded-full border border-zinc-300 p-1 dark:border-zinc-700 bg-white dark:bg-zinc-900">
+            <div className="rounded-full border border-zinc-300 p-1  bg-white ">
               {(["All", "Cat", "Dog"] as const).map((s) => {
                 const active = s === species;
                 return (
@@ -89,7 +89,7 @@ export default function GrowlrrProducts() {
                     className={`rounded-full px-3 py-1.5 text-sm font-medium transition ${
                       active
                         ? "bg-amber-600 text-white"
-                        : "text-zinc-700 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800"
+                        : "text-zinc-700 hover:bg-zinc-100  "
                     }`}
                   >
                     {s}
@@ -112,10 +112,10 @@ export default function GrowlrrProducts() {
           {list.map((p) => (
             <article
               key={p.id}
-              className="group relative flex flex-col rounded-2xl sm:border bg-gray-50 bg-white p-1.5 sm:p-5 shadow-sm ring-1 ring-black/5 transition hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900/80"
+              className="group relative flex flex-col rounded-2xl sm:border bg-gray-50 bg-white p-1.5 sm:p-5 shadow-sm ring-1 ring-black/5 transition hover:shadow-lg "
             >
               {p.badge && (
-                <span className="absolute hidden sm:block right-3 top-3 rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/30 dark:text-amber-200">
+                <span className="absolute hidden sm:block right-3 top-3 rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800  ">
                   {p.badge}
                 </span>
               )}
@@ -134,7 +134,7 @@ export default function GrowlrrProducts() {
                 <p className="text-xs text-zinc-500">
                   {p.species} • {p.pack}
                 </p>
-                <h3 className="mt-1 text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+                <h3 className="mt-1 text-lg font-semibold text-zinc-900">
                   {p.title}
                 </h3>
                 <div className="mt-2 flex items-center justify-between">
@@ -161,7 +161,7 @@ export default function GrowlrrProducts() {
                 </button>
                 <button
                   onClick={() => add(p.id)}
-                  className="rounded-full border border-zinc-300 px-4 py-2 text-sm hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800"
+                  className="rounded-full border border-zinc-300 px-4 py-2 text-sm hover:bg-zinc-100 "
                 >
                   + Quick Add
                 </button>
@@ -177,15 +177,15 @@ export default function GrowlrrProducts() {
 
       {/* Cart Drawer */}
       <div
-        className={`fixed inset-y-0 right-0 z-50 w-full max-w-md transform bg-white shadow-2xl transition-transform duration-300 dark:bg-zinc-900 ${
+        className={`fixed inset-y-0 right-0 z-50 w-full max-w-md transform bg-white shadow-2xl transition-transform duration-300  ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-between border-b border-zinc-200 p-4 dark:border-zinc-800">
+        <div className="flex items-center justify-between border-b border-zinc-200 p-4 ">
           <h4 className="text-lg font-semibold">Your Cart</h4>
           <button
             onClick={() => setOpen(false)}
-            className="rounded-lg border px-2 py-1 text-sm hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800"
+            className="rounded-lg border px-2 py-1 text-sm hover:bg-zinc-100  "
           >
             Close
           </button>
@@ -198,7 +198,7 @@ export default function GrowlrrProducts() {
             lines.map((l) => (
               <div
                 key={l.id}
-                className="mb-3 flex items-center justify-between rounded-xl border p-3 dark:border-zinc-800"
+                className="mb-3 flex items-center justify-between rounded-xl border p-3 "
               >
                 <div>
                   <p className="text-sm font-semibold">{l.product.title}</p>
@@ -209,14 +209,14 @@ export default function GrowlrrProducts() {
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => setQty(l.id, l.qty - 1)}
-                    className="h-8 w-8 rounded-lg border text-lg leading-none hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800"
+                    className="h-8 w-8 rounded-lg border text-lg leading-none hover:bg-zinc-100  "
                   >
                     –
                   </button>
                   <span className="w-6 text-center text-sm">{l.qty}</span>
                   <button
                     onClick={() => setQty(l.id, l.qty + 1)}
-                    className="h-8 w-8 rounded-lg border text-lg leading-none hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800"
+                    className="h-8 w-8 rounded-lg border text-lg leading-none hover:bg-zinc-100  "
                   >
                     +
                   </button>
@@ -227,7 +227,7 @@ export default function GrowlrrProducts() {
         </div>
 
         {/* Subscription + totals */}
-        <div className="mt-auto border-t border-zinc-200 p-4 text-sm dark:border-zinc-800">
+        <div className="mt-auto border-t border-zinc-200 p-4 text-sm ">
           <label className="flex items-center gap-2">
             <input type="checkbox" checked={subSave} onChange={(e) => setSubSave(e.target.checked)} />
             <span>
@@ -255,7 +255,7 @@ export default function GrowlrrProducts() {
           <div className="mt-4 grid grid-cols-2 gap-2">
             <button
               onClick={clear}
-              className="rounded-xl border px-4 py-2 hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800"
+              className="rounded-xl border px-4 py-2 hover:bg-zinc-100  "
             >
               Clear
             </button>

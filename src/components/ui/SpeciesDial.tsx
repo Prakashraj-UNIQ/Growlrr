@@ -72,7 +72,7 @@ export default function WeeklyRotationCircle({
       {/* Left side */}
       <div>
         {/* Tabs */}
-        <div className="flex items-center gap-2 rounded border border-zinc-300 p-1 mb-4 w-fit dark:border-zinc-700">
+        <div className="flex items-center gap-2 rounded border border-zinc-300 p-1 mb-4 w-fit ">
           {(["Cat", "Dog"] as const).map((s) => {
             const active = s === species;
             return (
@@ -81,7 +81,7 @@ export default function WeeklyRotationCircle({
                 onClick={() => setSpecies(s)}
                 className={[
                   "rounded px-3 py-1.5 text-sm font-medium transition",
-                  active ? "bg-amber-600 text-white" : "text-zinc-700 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800",
+                  active ? "bg-amber-600 text-white" : "text-zinc-700 hover:bg-zinc-100 ",
                 ].join(" ")}
               >
                 {s} Plan
@@ -91,7 +91,7 @@ export default function WeeklyRotationCircle({
         </div>
 
         <h2 className="text-3xl font-bold mb-4">Why Rotational Diet?</h2>
-        <p className="mt-1 text-base text-zinc-600 dark:text-zinc-300">
+        <p className="mt-1 text-base text-zinc-600 ">
           Pets don’t need every nutrient maxed in one meal. Our system balances across the cycle, aligning to AAFCO / FEDIAF while staying biologically appropriate.
         </p>
 
@@ -143,8 +143,8 @@ export default function WeeklyRotationCircle({
                     cy={y}
                     r={nodeR}
                     className={[
-                      active ? "fill-amber-600" : "fill-amber-50 dark:fill-zinc-900",
-                      "stroke-amber-600 dark:stroke-amber-500",
+                      active ? "fill-amber-600" : "fill-amber-50 ",
+                      "stroke-amber-600 ",
                     ].join(" ")}
                     strokeWidth={active ? 3 : 1.5}
                   />
@@ -154,7 +154,7 @@ export default function WeeklyRotationCircle({
                     textAnchor="middle"
                     className={[
                       "select-none text-[14px] font-semibold",
-                      active ? "fill-white" : "fill-amber-700 dark:fill-amber-300",
+                      active ? "fill-white" : "fill-amber-700",
                     ].join(" ")}
                   >
                     {["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"][i]}
@@ -185,11 +185,11 @@ export default function WeeklyRotationCircle({
                   />
                 </div>
 
-                <p className="text-[12px] uppercase tracking-wide text-amber-700 dark:text-amber-300">
+                <p className="text-[12px] uppercase tracking-wide text-amber-700 ">
                   {species} Plan – Day’s Nutrition
                 </p>
                 <h3 className="mt-1 text-lg font-bold">{days[idx].title}</h3>
-                <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">{days[idx].desc}</p>
+                <p className="mt-1 text-sm text-zinc-700 ">{days[idx].desc}</p>
               </div>
             </div>
           </foreignObject>

@@ -89,12 +89,12 @@ export default function ValuesShowcase() {
 
               <h3
                 id={`value-title-${i}`}
-                className="mt-3 text-lg font-semibold text-zinc-900 dark:text-zinc-100"
+                className="mt-3 text-lg font-semibold text-zinc-900 "
               >
                 {v.title}
               </h3>
 
-              <p className="mt-1 text-center leading-relaxed text-zinc-700 dark:text-zinc-300">
+              <p className="mt-1 text-center leading-relaxed text-zinc-700 ">
                 {v.desc}
               </p>
             </article>

@@ -11,7 +11,7 @@ export default function TimelineItem({
         <div className="relative">
             <time
                 dateTime={year}
-                className="flex items-center  font-semibold leading-6 text-orange-600 dark:text-orange-400"
+                className="flex items-center  font-semibold leading-6 text-orange-600 "
             >
                 <svg
                     viewBox="0 0 4 4"
@@ -22,14 +22,14 @@ export default function TimelineItem({
                 </svg>
                 {year}
                 <div
-                    className="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 dark:bg-gray-500 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
+                    className="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10  sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
                     aria-hidden="true"
                 ></div>
             </time>
-            <p className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900 dark:text-white">
+            <p className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900 ">
                 {title}
             </p>
-            <p className="mt-1  leading-7 text-gray-600 dark:text-gray-300">
+            <p className="mt-1  leading-7 text-gray-600 ">
                 {desc}
             </p>
         </div>

@@ -45,7 +45,7 @@
         {multiline ? (
           <textarea
             placeholder={placeholder}
-            className="flex-1 bg-transparent outline-none px-3 text-gray-800 dark:text-gray-100 placeholder-gray-400 resize-none"
+            className="flex-1 bg-transparent outline-none px-3 text-gray-800  placeholder-gray-400 resize-none"
             onFocus={() => setFocused(true)}
             onBlur={() => setFocused(false)}
             rows={4}
@@ -54,7 +54,7 @@
           <input
             type={type}
             placeholder={placeholder}
-            className="flex-1 bg-transparent outline-none px-3 text-gray-800 dark:text-gray-100 placeholder-gray-400"
+            className="flex-1 bg-transparent outline-none px-3 text-gray-800  placeholder-gray-400"
             onFocus={() => setFocused(true)}
             onBlur={() => setFocused(false)}
           />

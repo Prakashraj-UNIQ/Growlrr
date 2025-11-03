@@ -7,7 +7,7 @@ export default function GoogleButton({ callbackUrl = "/" }: { callbackUrl?: stri
     <button
       type="button"
       onClick={() => console.log("Google sign-in clicked with callbackUrl:", callbackUrl)} // Placeholder for signIn
-      className="w-full h-11 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 transition flex items-center justify-center gap-3"
+      className="w-full h-11 rounded-lg border border-slate-300  bg-white  hover:bg-slate-50  transition flex items-center justify-center gap-3"
     >
       <GoogleIcon className="w-5 h-5" />
       <span className="text-sm font-medium">Continue with Google</span>

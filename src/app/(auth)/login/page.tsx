@@ -27,7 +27,7 @@ export default function LoginPage() {
           <h1 className="text-3xl font-bold text-brandBlue tracking-tight mb-2">
             Welcome back
           </h1>
-          <p className="text-sm text-slate-600 dark:text-slate-400">
+          <p className="text-sm text-slate-600">
             Sign in to continue
           </p>
         </div>
@@ -54,14 +54,14 @@ export default function LoginPage() {
         </form>
 
         <div className="my-5 flex items-center gap-3">
-          <div className="h-px flex-1 bg-slate-200 dark:bg-slate-800" />
+          <div className="h-px flex-1 bg-slate-200 " />
           <span className="text-xs text-slate-500">OR</span>
-          <div className="h-px flex-1 bg-slate-200 dark:bg-slate-800" />
+          <div className="h-px flex-1 bg-slate-200 " />
         </div>
 
         <GoogleButton callbackUrl={routes.home} />
 
-        <p className="mt-6 text-center text-sm text-slate-600 dark:text-slate-400">
+        <p className="mt-6 text-center text-sm text-slate-600">
           Don’t have an account?{" "}
           <Link href="/signup" className="text-brandOrange hover:underline">
             Sign up

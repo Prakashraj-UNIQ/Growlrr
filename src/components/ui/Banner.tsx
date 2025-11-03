@@ -13,8 +13,8 @@ export default function Banner({ title, subtitle, description }: Banner) {
         {/* Paper card */}
         <div
           className="
-            relative rounded-xl border border-zinc-200 dark:border-zinc-700
-            shadow-2xl bg-white/95 dark:bg-zinc-900/90
+            relative rounded-xl border border-zinc-200 
+            shadow-2xl bg-white/95 
             pl-24 pr-10 py-10
           "
           /* Ruled note effect: horizontal lines + red margin */
@@ -67,13 +67,13 @@ export default function Banner({ title, subtitle, description }: Banner) {
           </span>
 
           {/* Content */}
-          <p className="text-sm uppercase tracking-widest text-brandOrange dark:text-amber-400">
+          <p className="text-sm uppercase tracking-widest text-brandOrange ">
             {title}
           </p>
-          <h1 className="mt-2 text-3xl md:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+          <h1 className="mt-2 text-3xl md:text-4xl font-bold tracking-tight text-zinc-900 ">
             {subtitle}
           </h1>
-          <p className="mt-3 max-w-2xl text-zinc-700 dark:text-zinc-300">
+          <p className="mt-3 max-w-2xl text-zinc-700 ">
             {description}
           </p>
         </div>

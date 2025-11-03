@@ -21,7 +21,7 @@ export default function CartPage() {
 
       {/* 📝 Text Content */}
       <h2 className="text-2xl text-brandBlue font-semibold italic mb-2">Your Cart is Empty</h2>
-      <p className="text-slate-600 dark:text-slate-400 mb-6 max-w-md">
+      <p className="text-slate-600  mb-6 max-w-md">
         Looks like you haven’t added anything to your cart yet.
         Explore our shop and find something you love!
       </p>
