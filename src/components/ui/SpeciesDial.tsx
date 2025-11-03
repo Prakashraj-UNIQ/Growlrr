@@ -188,7 +188,7 @@ export default function WeeklyRotationCircle({
                 <p className="text-[12px] uppercase tracking-wide text-amber-700 ">
                   {species} Plan – Day’s Nutrition
                 </p>
-                <h3 className="mt-1 text-lg font-bold">{days[idx].title}</h3>
+                <h3 className="mt-1 text-lg font-bold text-black">{days[idx].title}</h3>
                 <p className="mt-1 text-sm text-zinc-700 ">{days[idx].desc}</p>
               </div>
             </div>

@@ -66,7 +66,7 @@ export default function ValuesShowcase() {
       <div
         ref={scrollRef}
         className={classNames(
-          "mt-5 flex mx-12 sm:mx-0 sm:gap-20 overflow-x-auto pb-2",
+          "mt-5 flex mx-14 sm:mx-0 sm:gap-20 overflow-x-auto pb-2",
           "snap-x snap-mandatory [-ms-overflow-style:none] [scrollbar-width:none]",
           "[&::-webkit-scrollbar]:hidden"
         )}
